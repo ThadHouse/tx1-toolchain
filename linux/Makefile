@@ -24,7 +24,7 @@ tree:
 	V_GCC=$(V_GCC) makes/tree
 
 tarpkg:
-	cd tree-install/usr/local && mv nano1804-toolchain nano1804 && tar czf ../../../Nano1804-Linux-Toolchain-$(V_GCC).tar.gz nano1804
+	cd tree-install/usr/local && mv tx1-toolchain tx1 && tar czf ../../../TX1-Linux-Toolchain-$(V_GCC).tar.gz tx1
 
 clean:
 	rm -rf binutils* roborio* sysroot* gcc* tree-install gdb* *-Toolchain-*.tar.gz
