@@ -77,7 +77,7 @@ cd gcc-build
     --disable-libmudflap \
     --with-build-sysroot=/usr/local/nano1804-toolchain/sys-root \
     --libdir=/c/Users/Public/nano1804/sys-root/usr/lib \
-    --with-gxx-include-dir=/c/Users/Public/nano1804/sys-root/usr/include/c++/7.4.0 \
+    --with-gxx-include-dir=/c/Users/Public/nano1804/sys-root/usr/include/c++/5.5.0 \
     || exit $?
 make -j3 all-gcc || exit $?
 DESTDIR=$PWD/../gcc-install make install-gcc || exit $?
