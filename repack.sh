@@ -46,11 +46,11 @@ rm -d repack/out/*(/^F)
 
 # move "6" to "5.5.0" directories
 #rm repack/out/usr/lib/gcc/aarch64-linux-gnu/5.5.0
-mv repack/out/usr/lib/gcc/aarch64-linux-gnu/7 repack/out/usr/lib/gcc/aarch64-linux-gnu/5.5.0
+mv repack/out/usr/lib/gcc/aarch64-linux-gnu/5 repack/out/usr/lib/gcc/aarch64-linux-gnu/5.5.0
 rm repack/out/usr/include/aarch64-linux-gnu/c++/5.5.0
-mv repack/out/usr/include/aarch64-linux-gnu/c++/7 repack/out/usr/include/aarch64-linux-gnu/c++/5.5.0
+mv repack/out/usr/include/aarch64-linux-gnu/c++/5 repack/out/usr/include/aarch64-linux-gnu/c++/5.5.0
 rm repack/out/usr/include/c++/5.5.0
-mv repack/out/usr/include/c++/7 repack/out/usr/include/c++/5.5.0
+mv repack/out/usr/include/c++/5 repack/out/usr/include/c++/5.5.0
 
 # change absolute symlinks into relative symlinks
 pushd repack/out/usr/lib/aarch64-linux-gnu
@@ -93,6 +93,7 @@ popd
 pushd repack/out/usr/lib/gcc/aarch64-linux-gnu/5.5.0
 rm libasan.so
 rm libatomic.so
+rm libgcc_s.so
 rm libgcc_s.so.1
 rm libgomp.so
 rm libstdc++.so
