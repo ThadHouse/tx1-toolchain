@@ -3,3 +3,11 @@
 *.tar.bz2
 *.deb
 repack/
+*/sysroot-libc-linux/
+*/sysroot-install/
+*/binutils-2.28/
+*/binutils-build/
+*/gcc-5.5.0/
+*/binutils-install/
+*/gcc-build/
+*/gcc-install/
