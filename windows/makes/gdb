@@ -5,14 +5,14 @@ mkdir gdb-install
 cd gdb-build
 ../gdb-${V_GDB}/configure \
     --host=i686-w64-mingw32 \
-    --prefix=/c/Users/Public/tx1 \
-    --program-prefix=aarch64-tx1-linux-gnu- \
+    --prefix=/c/Users/Public/xenial \
+    --program-prefix=aarch64-xenial-linux-gnu- \
     --target=aarch64-linux-gnu \
-    --with-sysroot=/c/Users/Public/tx1/sys-root \
-    --with-build-sysroot=/usr/local/tx1-toolchain/sys-root \
+    --with-sysroot=/c/Users/Public/xenial/sys-root \
+    --with-build-sysroot=/usr/local/xenial-toolchain/sys-root \
     --enable-plugins \
     --disable-nls \
-    --with-pkgversion="GDB for Jetson TX1 18.04" \
+    --with-pkgversion="GDB for Ubuntu Xenial Aarch64 16.04" \
     --disable-nls \
     --with-expat \
     --with-libexpat-prefix=$PWD/../expat-install/usr/local/

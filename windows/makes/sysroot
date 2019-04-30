@@ -2,6 +2,6 @@
 source ../versions.sh
 
 
-mkdir -p sysroot-install/c/Users/Public/tx1/sys-root
-mv sysroot-libc-linux/{usr,lib} sysroot-install/c/Users/Public/tx1/sys-root
+mkdir -p sysroot-install/c/Users/Public/xenial/sys-root
+mv sysroot-libc-linux/{usr,lib} sysroot-install/c/Users/Public/xenial/sys-root
 

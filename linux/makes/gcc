@@ -45,7 +45,7 @@ mkdir gcc-install
 cd gcc-build
 ../gcc-${V_GCC}/configure \
     --enable-threads=posix \
-    --program-prefix=aarch64-tx1-linux-gnu- \
+    --program-prefix=aarch64-xenial-linux-gnu- \
     --target=aarch64-linux-gnu \
     --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables}' \
     --enable-languages=c,c++ \
@@ -54,15 +54,15 @@ cd gcc-build
     --enable-shared \
     --enable-lto \
     --disable-nls \
-    "--with-pkgversion=GCC for Jetson TX1 18.04" \
+    "--with-pkgversion=GCC for Ubuntu Xenial Aarch64 16.04" \
     --with-cloog \
     --enable-multilib \
     --enable-multiarch \
-    --prefix=/usr/local/tx1-toolchain \
-    --with-sysroot=/usr/local/tx1-toolchain/sys-root \
+    --prefix=/usr/local/xenial-toolchain \
+    --with-sysroot=/usr/local/xenial-toolchain/sys-root \
     --disable-libmudflap \
-    --libdir=/usr/local/tx1-toolchain/sys-root/usr/lib \
-    --with-gxx-include-dir=/usr/local/tx1-toolchain/sys-root/usr/include/c++/5.5.0 \
+    --libdir=/usr/local/xenial-toolchain/sys-root/usr/lib \
+    --with-gxx-include-dir=/usr/local/xenial-toolchain/sys-root/usr/include/c++/5.5.0 \
     --with-system-zlib \
     || exit $?
 make -j3 all-gcc || exit $?

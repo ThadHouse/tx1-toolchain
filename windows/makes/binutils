@@ -11,16 +11,16 @@ mkdir binutils-install
 cd binutils-build
 ../binutils-${V_BINUTILS}/configure \
     --host=i686-w64-mingw32 \
-    --prefix=/c/Users/Public/tx1 \
-    --program-prefix=aarch64-tx1-linux-gnu- \
+    --prefix=/c/Users/Public/xenial \
+    --program-prefix=aarch64-xenial-linux-gnu- \
     --target=aarch64-linux-gnu \
-    "--with-pkgversion=GNU Binutils for Jetson TX1 18.04" \
+    "--with-pkgversion=GNU Binutils for Ubuntu Xenial Aarch64 16.04" \
     --enable-poison-system-directories \
-    --with-sysroot=/c/Users/Public/tx1/sys-root \
+    --with-sysroot=/c/Users/Public/xenial/sys-root \
     --enable-plugins \
     --disable-nls \
     --enable-lto \
-    --with-build-sysroot=/usr/local/tx1-toolchain/sys-root
+    --with-build-sysroot=/usr/local/xenial-toolchain/sys-root
 make -j3
 DESTDIR=$PWD/../binutils-install make install
 cd ../binutils-install

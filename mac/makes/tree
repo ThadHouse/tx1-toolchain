@@ -9,9 +9,9 @@ rsync gdb-install/ tree-install -a --copy-links
 du -hs .
 
 pushd tree-install
-strip usr/local/tx1-toolchain/bin/*
-strip usr/local/tx1-toolchain/aarch64-*/bin/*
-find usr/local/tx1-toolchain/libexec -type f |xargs strip
+strip usr/local/xenial-toolchain/bin/*
+strip usr/local/xenial-toolchain/aarch64-*/bin/*
+find usr/local/xenial-toolchain/libexec -type f |xargs strip
 popd
 
 du -hs .
